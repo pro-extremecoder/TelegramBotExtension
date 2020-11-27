@@ -19,13 +19,16 @@ class MessageList:
 
 
 class ExtendedMessage(types.Message):
+	is_answered = False
 
 	def __init__(self, parent_message, aim=None, *args, **kwargs):
 		self.aim = aim
-		self.is_answered = False
 
 		for key, value in parent_message.__dict__.items():
 			self.__dict__[key] = copy.deepcopy(value)
+
+	def get_answered(self):
+		self.is_answered = True
 
 
 class CustomTeleBot(TeleBot):
@@ -53,10 +56,11 @@ class CustomTeleBot(TeleBot):
 				if not answer.is_answered:
 					if message.aim in self._message_router:
 						self._message_router[message.aim](message)
-						answer.is_answered = True
+						answer.get_answered()
 						logger.debug(self.message_list)
 					else:
-						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="You can't answer this message")
+						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="You can't answer this message\nor you have \
+to click on inline button")
 				else:
 					self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="You have already answered this message")
 
@@ -75,8 +79,9 @@ class CustomTeleBot(TeleBot):
 				self._callback_router[call.message.aim](call)
 				self.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.message.text,
                 reply_markup=None)
-				call.message.is_answered = True
+				call.message.get_answered()
 				logger.debug(self.message_list)
+				self.answer_callback_query(call.id)
 				
 
 		super().polling(*args, **kwargs)
