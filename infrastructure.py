@@ -1,6 +1,8 @@
 import copy
+import time
 from telebot import TeleBot, types
 from loguru import logger
+from flask import request
 
 
 
@@ -37,7 +39,20 @@ class CustomTeleBot(TeleBot):
 	_callback_router = {}
 	_involved_functions = [] 
 
-	def polling(self, *args, **kwargs):
+	def __init__(self, app, proxi_url, *args, **kwargs):
+		token = kwargs['token']
+		super().__init__(*args, **kwargs)
+		
+		self.remove_webhook()
+		time.sleep(1)
+		self.set_webhook(url=f"https://{proxi_url}/telebot/{token}")
+
+		@app.route(f'/telebot/{token}', methods=["POST"])
+		def webhook():
+		    self.process_new_updates([types.Update.de_json(request.stream.read().decode("utf-8"))])
+		    return "ok", 200
+
+	def launch(self):
 		@self.message_handler(content_types=['text'])
 		@self.only_replies
 		def text_hanlder(message):
@@ -82,9 +97,6 @@ to click on inline button")
 				call.message.get_answered()
 				logger.debug(self.message_list)
 				self.answer_callback_query(call.id)
-				
-
-		super().polling(*args, **kwargs)
 
 	def send_message(self, aim=None, *args, **kwargs):
 

@@ -1,13 +1,33 @@
-import telebot
+import eventlet
+eventlet.monkey_patch()
+import os
+import time
 import config
 import random
+from flask import Flask, request, render_template
 from loguru import logger
 from telebot import types
 from infrastructure import CustomTeleBot, ExtendedMessage
+from flask_socketio import SocketIO
 
-#bot = telebot.TeleBot(config.TOKEN)
-bot = CustomTeleBot(config.TOKEN)
 
+app = Flask(__name__)
+PROXI_URL = os.getenv('PROXI_URL')
+bot = CustomTeleBot(token=config.TOKEN, app=app, proxi_url=PROXI_URL)
+sio = SocketIO(app)
+
+@app.route('/')
+def index():
+	return render_template('index.html')
+
+
+@sio.on('connect')
+def connect():
+	logger.info(f'[{request.sid}] has connected')
+
+@sio.on('message')
+def handleMessage(msg):
+	logger.info(msg)
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -45,5 +65,6 @@ def quiz(call):
 		bot.send_message(chat_id=call.message.chat.id, text="Miserable")
 
 
-
-bot.polling(none_stop=True)
+if __name__ == "__main__":
+	bot.launch()
+	sio.run(app, debug=True)
