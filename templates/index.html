@@ -8,7 +8,7 @@
 <body>
 
 	<script type="text/javascript" charset="utf-8">
-	    var socket = io({transports : ['websocket']});
+	    var socket = io();
 	    socket.on('connect', function() {
 	        socket.emit('my event', {data: 'I\'m connected!'});
 	    });

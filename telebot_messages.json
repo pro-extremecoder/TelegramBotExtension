@@ -1,0 +1,3539 @@
+[
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848092,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848092,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2037,
+            "text": "Welcome"
+        },
+        "message_id": 2037,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848092,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848092,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2038,
+            "text": "How are you?"
+        },
+        "message_id": 2038,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848093,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848093,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2039,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2039,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848100,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848100,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2041,
+            "text": "Great"
+        },
+        "message_id": 2041,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848100,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848100,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2042,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2042,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848102,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848102,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2043,
+            "text": "Great"
+        },
+        "message_id": 2043,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848105,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848105,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2044,
+            "text": "WAW"
+        },
+        "message_id": 2044,
+        "message_list": {},
+        "text": "WAW"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848108,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848108,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2046,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2046,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848113,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848113,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2048,
+            "text": "You can't answer this message\nor you have to click on inline button"
+        },
+        "message_id": 2048,
+        "message_list": {},
+        "text": "You can't answer this message\nor you have to click on inline button"
+    },
+    {
+        "aim": "unapropriate answer",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848115,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848115,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2050,
+            "text": "You have to only reply"
+        },
+        "message_id": 2050,
+        "message_list": {},
+        "text": "You have to only reply"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848134,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848134,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2052,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2052,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848137,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848137,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2054,
+            "text": "Welcome"
+        },
+        "message_id": 2054,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848137,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848137,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2055,
+            "text": "How are you?"
+        },
+        "message_id": 2055,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848137,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848137,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2056,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2056,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848143,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848143,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2058,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2058,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848148,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848148,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2060,
+            "text": "Great"
+        },
+        "message_id": 2060,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848148,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848148,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2061,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2061,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848150,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848150,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2062,
+            "text": "Great"
+        },
+        "message_id": 2062,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848152,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848152,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2063,
+            "text": "WAW"
+        },
+        "message_id": 2063,
+        "message_list": {},
+        "text": "WAW"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848197,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848197,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2065,
+            "text": "Welcome"
+        },
+        "message_id": 2065,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848197,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848197,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2066,
+            "text": "How are you?"
+        },
+        "message_id": 2066,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848197,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848197,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2067,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2067,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848201,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848201,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2069,
+            "text": "Great"
+        },
+        "message_id": 2069,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848201,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848201,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2070,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2070,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848610,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848610,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2071,
+            "text": "WAW"
+        },
+        "message_id": 2071,
+        "message_list": {},
+        "text": "WAW"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848619,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848619,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2073,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2073,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848622,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848622,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2075,
+            "text": "Welcome"
+        },
+        "message_id": 2075,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848622,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848622,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2076,
+            "text": "How are you?"
+        },
+        "message_id": 2076,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848622,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848622,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2077,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2077,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848623,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848623,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2078,
+            "text": "Great"
+        },
+        "message_id": 2078,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848627,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848627,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2080,
+            "text": "Great"
+        },
+        "message_id": 2080,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848628,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848628,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2081,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2081,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848630,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848630,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2082,
+            "text": "WAW"
+        },
+        "message_id": 2082,
+        "message_list": {},
+        "text": "WAW"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848878,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848878,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2084,
+            "text": "Welcome"
+        },
+        "message_id": 2084,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848879,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848879,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2085,
+            "text": "How are you?"
+        },
+        "message_id": 2085,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848879,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848879,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2086,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2086,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848900,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848900,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2087,
+            "text": "Great"
+        },
+        "message_id": 2087,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848908,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848908,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2089,
+            "text": "Great"
+        },
+        "message_id": 2089,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848908,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848908,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2090,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2090,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848910,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848910,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2091,
+            "text": "WAW"
+        },
+        "message_id": 2091,
+        "message_list": {},
+        "text": "WAW"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848937,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848937,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2093,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2093,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608848947,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608848947,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2095,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2095,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "aim": "report_about_uncorrect_using",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849074,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849074,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2097,
+            "text": "You have already answered this message"
+        },
+        "message_id": 2097,
+        "message_list": {},
+        "text": "You have already answered this message"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849077,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849077,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2099,
+            "text": "Welcome"
+        },
+        "message_id": 2099,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849077,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849077,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2100,
+            "text": "How are you?"
+        },
+        "message_id": 2100,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849078,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849078,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2101,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2101,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849079,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849079,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2102,
+            "text": "Great"
+        },
+        "message_id": 2102,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849083,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849083,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2104,
+            "text": "Great"
+        },
+        "message_id": 2104,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849083,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849083,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2105,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2105,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849087,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849087,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2106,
+            "text": "WAW"
+        },
+        "message_id": 2106,
+        "message_list": {},
+        "text": "WAW"
+    },
+    {
+        "aim": "unapropriate answer",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849091,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849091,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2108,
+            "text": "You have to only reply"
+        },
+        "message_id": 2108,
+        "message_list": {},
+        "text": "You have to only reply"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849097,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849097,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2111,
+            "text": "Welcome"
+        },
+        "message_id": 2111,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849098,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849098,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2112,
+            "text": "How are you?"
+        },
+        "message_id": 2112,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849098,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849098,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2113,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2113,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849127,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849127,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2114,
+            "text": "Great"
+        },
+        "message_id": 2114,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "to_greet",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849132,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849132,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2116,
+            "text": "Welcome"
+        },
+        "message_id": 2116,
+        "message_list": {},
+        "text": "Welcome"
+    },
+    {
+        "aim": "get_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849132,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849132,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2117,
+            "text": "How are you?"
+        },
+        "message_id": 2117,
+        "message_list": {},
+        "text": "How are you?"
+    },
+    {
+        "aim": "quiz",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849132,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849132,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2118,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "."
+        },
+        "message_id": 2118,
+        "message_list": {},
+        "text": "."
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849143,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849143,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2119,
+            "text": "Great"
+        },
+        "message_id": 2119,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849152,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849152,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2121,
+            "text": "Great"
+        },
+        "message_id": 2121,
+        "message_list": {},
+        "text": "Great"
+    },
+    {
+        "aim": "get_family_mood",
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849152,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": true,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849152,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2122,
+            "reply_markup": {
+                "inline_keyboard": [
+                    [
+                        {
+                            "callback_data": "good",
+                            "text": "\u0425\u043e\u0440\u043e\u0448\u043e"
+                        },
+                        {
+                            "callback_data": "bad",
+                            "text": "\u041d\u0435 \u043e\u0447\u0435\u043d\u044c"
+                        }
+                    ]
+                ]
+            },
+            "text": "How is your family?"
+        },
+        "message_id": 2122,
+        "message_list": {},
+        "text": "How is your family?"
+    },
+    {
+        "chat": {
+            "all_members_are_administrators": null,
+            "can_set_sticker_set": null,
+            "description": null,
+            "first_name": "Vlad",
+            "id": 799363047,
+            "invite_link": null,
+            "last_name": "Mustyatsa",
+            "permissions": null,
+            "photo": null,
+            "pinned_message": null,
+            "slow_mode_delay": null,
+            "sticker_set_name": null,
+            "title": null,
+            "type": "private",
+            "username": null
+        },
+        "content_type": "text",
+        "date": 1608849154,
+        "from_user": {
+            "can_join_groups": null,
+            "can_read_all_group_messages": null,
+            "first_name": "\u0421\u0430\u043d\u044f",
+            "id": 1386543410,
+            "is_bot": true,
+            "language_code": null,
+            "last_name": null,
+            "supports_inline_queries": null,
+            "username": "AtsasBot"
+        },
+        "is_answered": false,
+        "json": {
+            "chat": {
+                "first_name": "Vlad",
+                "id": 799363047,
+                "last_name": "Mustyatsa",
+                "type": "private"
+            },
+            "date": 1608849154,
+            "from": {
+                "first_name": "\u0421\u0430\u043d\u044f",
+                "id": 1386543410,
+                "is_bot": true,
+                "username": "AtsasBot"
+            },
+            "message_id": 2123,
+            "text": "WAW"
+        },
+        "message_id": 2123,
+        "message_list": {},
+        "text": "WAW"
+    }
+]

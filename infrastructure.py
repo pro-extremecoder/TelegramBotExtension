@@ -1,3 +1,5 @@
+import six
+import json
 import copy
 import time
 from telebot import TeleBot, types
@@ -8,29 +10,115 @@ from flask import request
 
 class MessageList:
 	
-	def __init__(self, *args):
-		self.messages = list(args)
+	def _get_messages_in_json(self):
+		with open('telebot_messages.json', 'r') as f:
+			messages_in_json = json.load(f)
 
+		return messages_in_json
+
+	def _put_messages_in_json(self, messages_dict):
+		with open('telebot_messages.json', 'w') as f:
+			f.write(str(json.dumps(messages_dict, sort_keys=True, indent=4)))
+
+	def put_message(self, message):
+		if message.__class__ != ExtendedMessage:
+			raise TypeError('message must be ExtendedMessage type')
+
+		messages = self._get_messages_in_json()
+		
+		msg_in_json = message.to_json()
+		messages.append(msg_in_json)
+
+		self._put_messages_in_json(messages)
+
+	def _get_message_in_json(self, id):
+		messages_in_json = self._get_messages_in_json()
+
+		for msg_in_json in messages_in_json:
+			if msg_in_json['message_id'] == id:
+				return msg_in_json
+		else:
+			logger.warning("Message hasn't be found")
+
+	def find_message(self, id):
+		msg_in_json = self._get_message_in_json(id)
+
+		if msg_in_json:
+			return ExtendedMessage.de_json(msg_in_json, self)
+
+	def _set_message_is_answered(self, id, value):
+		messages_in_json = self._get_messages_in_json()
+
+		for msg_in_json in messages_in_json:
+			if msg_in_json['message_id'] == id:
+				msg_in_json['is_answered'] = value
+				self._put_messages_in_json(messages_in_json)
+				return
+		else:
+			logger.warning("Message hasn't be found")
+			
 	def __repr__(self):
-		string = ""
-		for msg in self.messages:
-			string += f"<id: {msg.message_id}, aim: {msg.aim}, text: {msg.text}, is_answered: {msg.is_answered}>\n"
-
+		string = "\n"
+		for msg in self._get_messages_in_json():
+			string += f"<id: {msg.get('message_id')}, aim: {msg.get('aim')}, text: {msg.get('text')}, is_answered: {msg.get('is_answered')}>\n"''
 		string += "-" * 30
 		return string
 
 
 class ExtendedMessage(types.Message):
-	is_answered = False
-
-	def __init__(self, parent_message, aim=None, *args, **kwargs):
+	
+	def __init__(self, parent_message, message_list, is_answered=False, aim=None):#, *args, **kwargs):
 		self.aim = aim
+		self._is_answered = is_answered
+		self.message_list = message_list
 
 		for key, value in parent_message.__dict__.items():
 			self.__dict__[key] = copy.deepcopy(value)
 
+	@property
+	def is_answered(self):
+		return self._is_answered
+	
+	@is_answered.setter
+	def is_answered(self, value):
+		
+		if value.__class__ == bool:
+			self.message_list._set_message_is_answered(self.message_id, value)
+			self._is_answered = value
+		else:
+			raise TypeError('is_answered have to be boolean type')
+
 	def get_answered(self):
 		self.is_answered = True
+
+	def to_dict(self):
+		d = self.__dict__
+		d['is_answered'] = self.is_answered
+		d.pop('_is_answered')
+		return d
+
+	def to_json(self):
+		d = {}
+		
+		for x, y in six.iteritems(self.to_dict()):
+			if y == None:
+				pass
+			elif hasattr(y, '__dict__'):
+			    d[x] = y.__dict__
+			else:
+			    d[x] = y
+
+		return d
+
+	@classmethod
+	def de_json(cls, json_dict, message_list):
+		aim = json_dict.get('aim')
+		is_answered = json_dict['is_answered']
+		parent_message = types.Message.de_json(json_dict)
+		ex_message = ExtendedMessage(parent_message, message_list, aim=aim, is_answered=is_answered)
+		return ex_message
+
+
 
 
 class CustomTeleBot(TeleBot):
@@ -40,12 +128,15 @@ class CustomTeleBot(TeleBot):
 	_involved_functions = [] 
 
 	def __init__(self, app, proxi_url, *args, **kwargs):
-		token = kwargs['token']
+		if 'token' in kwargs:
+			token = kwargs['token']
+		else:
+			token = args[0]
 		super().__init__(*args, **kwargs)
 		
 		self.remove_webhook()
 		time.sleep(1)
-		self.set_webhook(url=f"https://{proxi_url}/telebot/{token}")
+		self.set_webhook(url=f"{proxi_url}/telebot/{token}")
 
 		@app.route(f'/telebot/{token}', methods=["POST"])
 		def webhook():
@@ -53,16 +144,16 @@ class CustomTeleBot(TeleBot):
 		    return "ok", 200
 
 	def launch(self):
+
 		@self.message_handler(content_types=['text'])
 		@self.only_replies
 		def text_hanlder(message):
 			if message.chat.type == "private":
 				# transform message from Message type to ExtendedMessage type
 				if message.reply_to_message:
-					answers = list(filter(lambda ans: ans.message_id == message.reply_to_message.message_id, self.message_list.messages))
-					if answers:
-						answer = answers[0]
-						message = ExtendedMessage(aim=answer.aim, parent_message=message)
+					answer = self.message_list.find_message(message.reply_to_message.message_id)
+					if answer:
+						message = ExtendedMessage(aim=answer.aim, parent_message=message, message_list=self.message_list)
 					else:
 						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="Message you've answered is out of current session")
 						return None
@@ -72,10 +163,9 @@ class CustomTeleBot(TeleBot):
 					if message.aim in self._message_router:
 						self._message_router[message.aim](message)
 						answer.get_answered()
-						logger.debug(self.message_list)
 					else:
-						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="You can't answer this message\nor you have \
-to click on inline button")
+						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", 
+							text="You can't answer this message\nor you have to click on inline button")
 				else:
 					self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="You have already answered this message")
 
@@ -83,9 +173,9 @@ to click on inline button")
 		def callback_handler(call):
 			if call.message.chat.type == "private":
 				# transform call.message from Message type to ExtendedMessage type
-				answers = list(filter(lambda ans: ans.message_id == call.message.message_id, self.message_list.messages))
-				if answers:
-					call.message = answers[0]
+				answer = self.message_list.find_message(call.message.message_id)
+				if answer:
+					call.message = answer
 				else:
 					self.send_message(chat_id=call.message.chat.id, aim="report_about_uncorrect_using", text="Message you've answered is out of current session")
 					return None
@@ -95,7 +185,6 @@ to click on inline button")
 				self.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.message.text,
                 reply_markup=None)
 				call.message.get_answered()
-				logger.debug(self.message_list)
 				self.answer_callback_query(call.id)
 
 	def send_message(self, aim=None, *args, **kwargs):
@@ -108,8 +197,8 @@ to click on inline button")
 			if aim not in self._callback_router:
 				raise RuntimeError("This aim doesn't have any handler")
 
-		ex_message = ExtendedMessage(aim=aim, parent_message=message)
-		self.message_list.messages.append(ex_message)
+		ex_message = ExtendedMessage(aim=aim, parent_message=message, message_list=self.message_list)
+		self.message_list.put_message(ex_message)
 		return ex_message
 
 	def message_route(self, current_aim):
@@ -119,9 +208,6 @@ to click on inline button")
 			if current_aim in self._message_router or current_aim in self._callback_router:
 				raise RuntimeError('route for this message aim have already existed')
 
-			'''for aim in self._message_router:
-				if self._message_router[aim].__name__ == func.__name__:
-					raise RuntimeError(f'function "{func.__name__}" is used for another message aim')'''
 			if func.__name__ in self._involved_functions:
 				raise RuntimeError(f'function "{func.__name__}" is used for another message aim')
 			else:
