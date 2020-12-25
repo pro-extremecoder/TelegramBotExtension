@@ -188,7 +188,7 @@ class CustomTeleBot(TeleBot):
 
 				
 				self._callback_router[call.message.aim](call)
-				self.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.message.text,
+				self.__edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.message.text,
                 reply_markup=None)
 				call.message.get_answered()
 				self.answer_callback_query(call.id)
@@ -254,6 +254,12 @@ class CustomTeleBot(TeleBot):
 			return func
 
 		return wrapper 
+
+	def edit_message_text(self, *args, **kwargs):
+		raise AttributeError("'CustomTeleBot' object has no attribute 'edit_message_text'")
+
+	def __edit_message_text(self, *args, **kwargs):
+		super().edit_message_text(*args, **kwargs)
 
 
 
