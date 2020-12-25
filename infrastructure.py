@@ -17,10 +17,15 @@ class MessageList:
 		return messages_in_json
 
 	def _put_messages_in_json(self, messages_dict):
+		for msg_in_json in messages_dict:
+			try:
+				msg_in_json.pop('message_list')
+			except KeyError:
+				pass
 		with open('telebot_messages.json', 'w') as f:
 			f.write(str(json.dumps(messages_dict, sort_keys=True, indent=4)))
 
-	def put_message(self, message):
+	def _put_message(self, message):
 		if message.__class__ != ExtendedMessage:
 			raise TypeError('message must be ExtendedMessage type')
 
@@ -44,7 +49,9 @@ class MessageList:
 		msg_in_json = self._get_message_in_json(id)
 
 		if msg_in_json:
-			return ExtendedMessage.de_json(msg_in_json, self)
+			ex_message = ExtendedMessage.de_json(msg_in_json)
+			ex_message.message_list = self
+			return ex_message
 
 	def _set_message_is_answered(self, id, value):
 		messages_in_json = self._get_messages_in_json()
@@ -67,10 +74,9 @@ class MessageList:
 
 class ExtendedMessage(types.Message):
 	
-	def __init__(self, parent_message, message_list, is_answered=False, aim=None):#, *args, **kwargs):
+	def __init__(self, parent_message, is_answered=False, aim=None):#, *args, **kwargs):
 		self.aim = aim
 		self._is_answered = is_answered
-		self.message_list = message_list
 
 		for key, value in parent_message.__dict__.items():
 			self.__dict__[key] = copy.deepcopy(value)
@@ -111,11 +117,11 @@ class ExtendedMessage(types.Message):
 		return d
 
 	@classmethod
-	def de_json(cls, json_dict, message_list):
+	def de_json(cls, json_dict):
 		aim = json_dict.get('aim')
 		is_answered = json_dict['is_answered']
 		parent_message = types.Message.de_json(json_dict)
-		ex_message = ExtendedMessage(parent_message, message_list, aim=aim, is_answered=is_answered)
+		ex_message = ExtendedMessage(parent_message, aim=aim, is_answered=is_answered)
 		return ex_message
 
 
@@ -151,18 +157,18 @@ class CustomTeleBot(TeleBot):
 			if message.chat.type == "private":
 				# transform message from Message type to ExtendedMessage type
 				if message.reply_to_message:
-					answer = self.message_list.find_message(message.reply_to_message.message_id)
-					if answer:
-						message = ExtendedMessage(aim=answer.aim, parent_message=message, message_list=self.message_list)
+					question = self.message_list.find_message(message.reply_to_message.message_id)
+					if question:
+						message = ExtendedMessage(aim=question.aim, parent_message=message)
 					else:
 						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="Message you've answered is out of current session")
 						return None
 				
-				# checking whether answer is answered	
-				if not answer.is_answered:
+				# checking whether question is answered	
+				if not question.is_answered:
 					if message.aim in self._message_router:
 						self._message_router[message.aim](message)
-						answer.get_answered()
+						question.get_answered()
 					else:
 						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", 
 							text="You can't answer this message\nor you have to click on inline button")
@@ -173,9 +179,9 @@ class CustomTeleBot(TeleBot):
 		def callback_handler(call):
 			if call.message.chat.type == "private":
 				# transform call.message from Message type to ExtendedMessage type
-				answer = self.message_list.find_message(call.message.message_id)
-				if answer:
-					call.message = answer
+				question = self.message_list.find_message(call.message.message_id)
+				if question:
+					call.message = question
 				else:
 					self.send_message(chat_id=call.message.chat.id, aim="report_about_uncorrect_using", text="Message you've answered is out of current session")
 					return None
@@ -197,8 +203,8 @@ class CustomTeleBot(TeleBot):
 			if aim not in self._callback_router:
 				raise RuntimeError("This aim doesn't have any handler")
 
-		ex_message = ExtendedMessage(aim=aim, parent_message=message, message_list=self.message_list)
-		self.message_list.put_message(ex_message)
+		ex_message = ExtendedMessage(aim=aim, parent_message=message)
+		self.message_list._put_message(ex_message)
 		return ex_message
 
 	def message_route(self, current_aim):
