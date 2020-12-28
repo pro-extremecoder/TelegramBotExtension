@@ -9,6 +9,9 @@ from flask import request
 
 
 class MessageList:
+
+	def __init__(self):
+		self._put_messages_in_json([])
 	
 	def _get_messages_in_json(self):
 		with open('telebot_messages.json', 'r') as f:
