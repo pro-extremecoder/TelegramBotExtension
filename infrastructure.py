@@ -75,6 +75,10 @@ class MessageList:
 				return
 		else:
 			logger.warning("Message hasn't be found")
+
+	def _clear(self):
+		self._put_messages_in_json([])
+		logger.critical('MESSAGE LIST HAS BEEN CLEARED')
 			
 	def __repr__(self):
 		string = "\n"
@@ -151,7 +155,7 @@ class ExtendedMessage(types.Message):
 		parent_message = types.Message.de_json(json_dict)
 		ex_message = ExtendedMessage(parent_message, aim=aim, is_answered=is_answered)
 		ex_message.json = json_dict
-		
+
 		return ex_message
 
 

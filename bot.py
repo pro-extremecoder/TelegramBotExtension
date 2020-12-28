@@ -61,6 +61,7 @@ def get_family_mood(call):
 def quiz(call):
 	if call.data == 'good':
 		bot.send_message(chat_id=call.message.chat.id, text="Great")
+		bot.message_list._clear()
 	else:
 		bot.send_message(chat_id=call.message.chat.id, text="Miserable")
 
