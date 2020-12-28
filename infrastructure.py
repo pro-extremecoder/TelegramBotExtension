@@ -22,6 +22,7 @@ class MessageList:
 				msg_in_json.pop('message_list')
 			except KeyError:
 				pass
+
 		with open('telebot_messages.json', 'w') as f:
 			f.write(str(json.dumps(messages_dict, sort_keys=True, indent=4)))
 
@@ -63,6 +64,17 @@ class MessageList:
 				return
 		else:
 			logger.warning("Message hasn't be found")
+
+	def _remove_message_reply_markup(self, id):
+		messages_in_json = self._get_messages_in_json()
+
+		for msg_in_json in messages_in_json:
+			if msg_in_json['message_id'] == id:
+				msg_in_json['json'].pop('reply_markup')
+				self._put_messages_in_json(messages_in_json)
+				return
+		else:
+			logger.warning("Message hasn't be found")
 			
 	def __repr__(self):
 		string = "\n"
@@ -78,8 +90,10 @@ class ExtendedMessage(types.Message):
 		self.aim = aim
 		self._is_answered = is_answered
 
+
 		for key, value in parent_message.__dict__.items():
 			self.__dict__[key] = copy.deepcopy(value)
+
 
 	@property
 	def is_answered(self):
@@ -91,11 +105,20 @@ class ExtendedMessage(types.Message):
 		if value.__class__ == bool:
 			self.message_list._set_message_is_answered(self.message_id, value)
 			self._is_answered = value
+			self.json['is_answered'] = value
 		else:
 			raise TypeError('is_answered have to be boolean type')
 
 	def get_answered(self):
 		self.is_answered = True
+
+	def remove_reply_markup(self):
+		try:
+			if self.json['reply_markup']:
+				self.message_list._remove_message_reply_markup(self.message_id)
+		except AttributeError:
+			logger.warning('this message does not have reply markup')
+		
 
 	def to_dict(self):
 		d = self.__dict__
@@ -120,8 +143,15 @@ class ExtendedMessage(types.Message):
 	def de_json(cls, json_dict):
 		aim = json_dict.get('aim')
 		is_answered = json_dict['is_answered']
+
+		json_dict = json_dict['json']
+		json_dict['aim'] = aim
+		json_dict['is_answered'] = is_answered	
+
 		parent_message = types.Message.de_json(json_dict)
 		ex_message = ExtendedMessage(parent_message, aim=aim, is_answered=is_answered)
+		ex_message.json = json_dict
+		
 		return ex_message
 
 
@@ -190,6 +220,7 @@ class CustomTeleBot(TeleBot):
 				self._callback_router[call.message.aim](call)
 				self.__edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.message.text,
                 reply_markup=None)
+				call.message.remove_reply_markup()
 				call.message.get_answered()
 				self.answer_callback_query(call.id)
 
