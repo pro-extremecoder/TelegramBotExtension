@@ -1,3 +1,4 @@
+import os
 import six
 import json
 import copy
@@ -11,7 +12,8 @@ from flask import request
 class MessageList:
 
 	def __init__(self):
-		self._put_messages_in_json([])
+		if not os.path.exists('telebot_messages.json'):
+			self._put_messages_in_json([])
 	
 	def _get_messages_from_json(self):
 		with open('telebot_messages.json', 'r') as f:
@@ -85,15 +87,17 @@ class MessageList:
 			
 	def __repr__(self):
 		string = "\n"
+		pattern = "<id: {}, aim: {}, text: {}, is_answered: {}>\n"
 		for msg in self._get_messages_from_json():
-			string += f"<id: {msg.get('message_id')}, aim: {msg.get('aim')}, text: {msg.get('text')}, is_answered: {msg.get('is_answered')}>\n"''
+			args = [msg.get('message_id'), msg.get('aim'), msg.get('text'), msg.get('is_answered')]
+			string += pattern.format(*args)
 		string += "-" * 30
 		return string
 
 
 class ExtendedMessage(types.Message):
 	
-	def __init__(self, parent_message, is_answered=False, aim=None):#, *args, **kwargs):
+	def __init__(self, parent_message, is_answered=False, aim=None):
 		self.aim = aim
 		self._is_answered = is_answered
 
@@ -198,7 +202,9 @@ class CustomTeleBot(TeleBot):
 					if question:
 						message = ExtendedMessage(aim=question.aim, parent_message=message)
 					else:
-						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="Message you've answered is out of current session")
+						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", 
+							text="Message you've answered is out of current session")
+
 						return None
 				
 				# checking whether question is answered	
@@ -210,7 +216,8 @@ class CustomTeleBot(TeleBot):
 						self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", 
 							text="You can't answer this message\nor you have to click on inline button")
 				else:
-					self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", text="You have already answered this message")
+					self.send_message(chat_id=message.chat.id, aim="report_about_uncorrect_using", 
+						text="You have already answered this message")
 
 		@self.callback_query_handler(func=lambda call: True)
 		def callback_handler(call):
@@ -220,13 +227,16 @@ class CustomTeleBot(TeleBot):
 				if question:
 					call.message = question
 				else:
-					self.send_message(chat_id=call.message.chat.id, aim="report_about_uncorrect_using", text="Message you've answered is out of current session")
+					self.send_message(chat_id=call.message.chat.id, aim="report_about_uncorrect_using", 
+						text="Message you've answered is out of current session")
+
 					return None
 
 				
 				self._callback_router[call.message.aim](call)
-				self.__edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=call.message.text,
-                reply_markup=None)
+				self.__edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, 
+					text=call.message.text, reply_markup=None)
+
 				call.message.remove_reply_markup()
 				call.message.get_answered()
 				self.answer_callback_query(call.id)
