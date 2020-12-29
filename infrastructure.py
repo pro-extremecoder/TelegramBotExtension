@@ -13,7 +13,7 @@ class MessageList:
 	def __init__(self):
 		self._put_messages_in_json([])
 	
-	def _get_messages_in_json(self):
+	def _get_messages_from_json(self):
 		with open('telebot_messages.json', 'r') as f:
 			messages_in_json = json.load(f)
 
@@ -33,15 +33,15 @@ class MessageList:
 		if message.__class__ != ExtendedMessage:
 			raise TypeError('message must be ExtendedMessage type')
 
-		messages = self._get_messages_in_json()
+		messages = self._get_messages_from_json()
 		
 		msg_in_json = message.to_json()
 		messages.append(msg_in_json)
 
 		self._put_messages_in_json(messages)
 
-	def _get_message_in_json(self, id):
-		messages_in_json = self._get_messages_in_json()
+	def _get_message_from_json(self, id):
+		messages_in_json = self._get_messages_from_json()
 
 		for msg_in_json in messages_in_json:
 			if msg_in_json['message_id'] == id:
@@ -50,7 +50,7 @@ class MessageList:
 			logger.warning("Message hasn't be found")
 
 	def find_message(self, id):
-		msg_in_json = self._get_message_in_json(id)
+		msg_in_json = self._get_message_from_json(id)
 
 		if msg_in_json:
 			ex_message = ExtendedMessage.de_json(msg_in_json)
@@ -58,7 +58,7 @@ class MessageList:
 			return ex_message
 
 	def _set_message_is_answered(self, id, value):
-		messages_in_json = self._get_messages_in_json()
+		messages_in_json = self._get_messages_from_json()
 
 		for msg_in_json in messages_in_json:
 			if msg_in_json['message_id'] == id:
@@ -69,7 +69,7 @@ class MessageList:
 			logger.warning("Message hasn't be found")
 
 	def _remove_message_reply_markup(self, id):
-		messages_in_json = self._get_messages_in_json()
+		messages_in_json = self._get_messages_from_json()
 
 		for msg_in_json in messages_in_json:
 			if msg_in_json['message_id'] == id:
@@ -85,7 +85,7 @@ class MessageList:
 			
 	def __repr__(self):
 		string = "\n"
-		for msg in self._get_messages_in_json():
+		for msg in self._get_messages_from_json():
 			string += f"<id: {msg.get('message_id')}, aim: {msg.get('aim')}, text: {msg.get('text')}, is_answered: {msg.get('is_answered')}>\n"''
 		string += "-" * 30
 		return string
