@@ -20,7 +20,7 @@ class MessageList:
 		if not os.path.exists('telebot_messages.json'): 
 			self._put_messages_in_json([])
 	
-	def _get_messages_from_json(self):
+	def _get_messages_in_json_format(self):
 
 		'''Take all message from telebot_messages.json -> List of Dicts'''
 
@@ -53,18 +53,18 @@ class MessageList:
 		if message.__class__ != ExtendedMessage:
 			raise TypeError('message must be ExtendedMessage type')
 
-		messages = self._get_messages_from_json()
+		messages = self._get_messages_in_json_format()
 		
 		msg_in_json = message.to_json()
 		messages.append(msg_in_json)
 
 		self._put_messages_in_json(messages)
 
-	def _get_message_from_json(self, id):
+	def _get_message_in_json_format(self, id):
 
 		'''Return message in json format by id'''
 		
-		messages_in_json = self._get_messages_from_json()
+		messages_in_json = self._get_messages_in_json_format()
 
 		for msg_in_json in messages_in_json:
 			if msg_in_json['message_id'] == id:
@@ -76,7 +76,7 @@ class MessageList:
 
 		'''Find message by id'''
 
-		msg_in_json = self._get_message_from_json(id)
+		msg_in_json = self._get_message_in_json_format(id)
 
 		if msg_in_json:
 			ex_message = ExtendedMessage.de_json(msg_in_json) # from json format to ExtendedMessage
@@ -87,7 +87,7 @@ class MessageList:
 
 		'''Set message.is_answered in telebot_message.json'''
 
-		messages_in_json = self._get_messages_from_json()
+		messages_in_json = self._get_messages_in_json_format()
 
 		for msg_in_json in messages_in_json:
 			if msg_in_json['message_id'] == id:
@@ -101,7 +101,7 @@ class MessageList:
 
 		'''Remove message reply markup in telebot_message.json'''
 
-		messages_in_json = self._get_messages_from_json()
+		messages_in_json = self._get_messages_in_json_format()
 
 		for msg_in_json in messages_in_json:
 			if msg_in_json['message_id'] == id:
@@ -124,7 +124,7 @@ class MessageList:
 
 		string = "\n"
 		pattern = "<id: {}, aim: {}, text: {}, is_answered: {}>\n"
-		for msg in self._get_messages_from_json():
+		for msg in self._get_messages_in_json_format():
 			args = [msg.get('message_id'), msg.get('aim'), msg.get('text'), msg.get('is_answered')]
 			string += pattern.format(*args)
 		string += "-" * 30
